@@ -14,11 +14,11 @@ var clientSchema = new mongoose.Schema({
     name: String,
     gender: String,
     location: String,
-    //    geocode: Number,
-    //  age: Number,
+    geocode: Number,
+    age: Number,
     country: String,
     district: String,
-    dob: String
+    dob: Number
 
 
 });
