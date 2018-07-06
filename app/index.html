@@ -2,80 +2,44 @@
 <html>
 
 
-<div style="text-align:center">
-    <h1>
-        Welcome to my Clinic Pesa solution!
-    </h1>
-    <img width="300" alt="Clinic pesa logo" src="http://disrupt-africa.com/wp-content/uploads/2017/08/clinicPesa.jpg">
-</div>
-<h2>Here is a form to help clients insert their details: </h2>
+<head>
+    <meta charset="UTF-8">
+    <title>Client Data</title>
+</head>
+
+<body>
+
+    <div style="text-align:center">
+        <h1>
+            Welcome to my Clinic Pesa solution!
+        </h1>
+        <img width="300" alt="Clinic pesa logo" src="http://disrupt-africa.com/wp-content/uploads/2017/08/clinicPesa.jpg">
+    </div>
+
+    <h1>Please fill data in the form below:</h1>
+    <form method="POST" action="/clientdetails" class="form-horizontal">
+        <fieldset>
+            <legend>Sign Up</legend>
+
+            <label>Name:<input type="text" name="name" placeholder="Enter both your names" required></label>
+            <br>
+
+            <label>location:<input type="text" name="loaction" placeholder="Enetr location" required></label>
+            <br>
+            <label>geocode:<input type="number" name="geocode" placeholder="Enetr client geocode" required></label>
+            <br>
+            <label>country:<input type="text" name="country" placeholder="Enetr client country" required></label>
+            <br>
+            <label>district:<input type="text" name="district" placeholder="Enetr client district" required></label>
+            <br>
+            <label>dob:<input type="date" name="dob" placeholder="Enter client dob" required></label>
+            <br>
 
 
-<div class="row custom-row">
-    <div class="col-sm-5 custom-container jumbotron">
+            <input type="submit" value="Add client details">
+        </fieldset>
+    </form>
 
-        <div class="row custom-row">
-            <div class="col-sm-5 custom-container jumbotron">
+</body>
 
-                <form class="form-horizontal">
-                    <fieldset>
-                        <legend>SignUp</legend>
-
-
-                        <div class="form-group">
-                            <label for="inputName">Name</label>
-                            <input type="text" id="inputName" placeholder="client's name">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="inputLocation">Location</label>
-                            <input type="text" id="inputLocation" placeholder="Location">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="geocode">geocode</label>
-                            <input type="text" id="deocode" placeholder="geocode">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="country">country</label>
-                            <input type="text" id="country" placeholder="country">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="district">district</label>
-                            <input type="text" id="district" placeholder="district">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="age">age</label>
-                            <input type="text" id="age" placeholder="age">
-                        </div>
-
-
-                        <div class="form-group">
-                            <label for="select">Gender</label>
-                            <select id="select">
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Other</option>
-                              </select>
-                        </div>
-
-
-                        <div class="form-group checkbox">
-                            <label>
-                              <input type="checkbox"> Confirm that you've read the Terms and 
-                              Conditions
-                            </label>
-                        </div>
-
-
-                        <div class="form-group">
-                            <button type="reset" class="btn btn-default">Cancel</button>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
+</html>

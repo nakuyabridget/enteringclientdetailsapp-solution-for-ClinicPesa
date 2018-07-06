@@ -15,10 +15,10 @@ var clientSchema = new mongoose.Schema({
     gender: String,
     location: String,
     geocode: Number,
-    age: Number,
+    dob: Date,
     country: String,
     district: String,
-    dob: Number
+
 
 
 });
