@@ -46,6 +46,20 @@ app.post("/clientdetails", (req, res) => {
 
 });
 
+db.collection('test').findAndModify({ hello: 'world' }, // query
+    [
+        ['_id', 'asc']
+    ], // sort order
+    { $set: { hi: 'there' } }, // replacement, replaces only the field "hi"
+    {}, // options
+    function(err, object) {
+        if (err) {
+            console.warn(err.message); // returns error if no matching object found
+        } else {
+            console.dir(object);
+        }
+    });
+
 //defining the port on wchich our client side endpoint listens
 
 app.listen(3000, function() {
