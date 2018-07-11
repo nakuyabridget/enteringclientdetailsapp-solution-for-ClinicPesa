@@ -15,7 +15,7 @@ var clientSchema = new mongoose.Schema({
     gender: String,
     location: String,
     geocode: Number,
-    dob: Date,
+    dob: Date.prototype.getUTCDate(),
     country: String,
     district: String,
 
